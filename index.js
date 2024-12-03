@@ -8,10 +8,14 @@ const ETH_GAS_GWEI = process.env.ETH_GAS_GWEI; // Gas Price in Gwei (from .env)
 const GAS_LIMIT = process.env.GAS_LIMIT; // Gas Limit (from .env)
 
 
-function printProgress(progress){
-    process.stdout.clearLine();
-    process.stdout.cursorTo(0);
-    process.stdout.write(progress);
+function printProgress(progress) {
+    if (process.stdout.isTTY) {
+        process.stdout.clearLine();
+        process.stdout.cursorTo(0);
+        process.stdout.write(progress);
+    } else {
+        console.log(progress); // Fall back to simply logging the progress
+    }
 }
 
 async function main() {
