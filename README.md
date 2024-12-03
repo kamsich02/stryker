@@ -18,11 +18,6 @@ THis script listen incoming transactions by ethereum address. As soon as the wal
 > :question: **What is the purpose of this tool?**
 > Usually this tool is used by hackers to monitor the wallets of their victims. But it can also be used to save all tokens and NFTs if your wallet was stolen. Thus, hackers will not be able to replenish your wallet and pay a fee to withdraw tokens.
 
-## 🔗 Socials:
-
-- Telegram: [@japancode](https://t.me/japancode)
-- Store: https://japancode.sellix.io/
-
 
 > :warning: **Error: replacement transaction underpriced?**
 > Solution: Adding a gas price **%10 higher** than the existing unmined transaction's gas price OR **increase your nonce**
