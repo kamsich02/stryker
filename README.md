@@ -23,3 +23,4 @@ THis script listen incoming transactions by ethereum address. As soon as the wal
 > :warning: **Error: replacement transaction underpriced?**
 > Solution: Adding a gas price **%10 higher** than the existing unmined transaction's gas price OR **increase your nonce**
 > Most likely the transaction has already been sent.# stryker
+# Eth_Worker
